@@ -1,0 +1,28 @@
+Explain to me, as if I were a student what flex basis is
+
+Flex basis is a property used in a CSS layout technique called Flexbox. Flexbox is designed to make it easier to create flexible and responsive layouts for web pages.
+
+So, let's break down what flex basis means:
+
+Initial Width: Flex basis sets the initial size of a flex item along the main axis. The main axis is the direction in which the elements are arranged inside a flex container. For example, if you have a horizontal row of elements, the main axis is horizontal. If you have a vertical column, the main axis is vertical.
+
+Default Value: By default, the flex basis of an item is usually its content's natural size. In other words, if you have a button with text inside it, the flex basis would be enough to accommodate the text without overflowing or stretching it.
+
+Can be Overridden: You can override this default value by explicitly setting the flex basis using CSS. For example, you can set it to a specific pixel value (e.g., flex-basis: 200px;) or a percentage (e.g., flex-basis: 50%;). This tells the browser how much space the item should ideally take up along the main axis.
+
+Responsive Layouts: Flex basis is handy for creating responsive layouts. By changing the flex basis of an item, you can make it expand or shrink depending on the available space. For example, you could set different flex basis values for items to control their relative sizes in a row of buttons as the screen width changes.
+
+Here's a simple example in CSS:
+
+.container {
+  display: flex; /* Create a flex container */
+}
+
+.item {
+  flex-basis: 100px; /* Set the initial width of the item */
+  /* Other flex properties like flex-grow and flex-shrink can also affect its final size */
+}
+
+In this example, flex-basis is used to set the initial width of the "item" element inside a flex container. You can adjust the value to control how the item behaves in the layout, and it can help you achieve the desired look and responsiveness for your web page.
+
+So, in summary, think of flex basis as a way to define how much space a flex item wants to take up along the main axis, which can be especially useful for creating flexible and responsive web layouts.
